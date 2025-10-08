@@ -29,7 +29,8 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "softwareKeyboardLayoutMode": "pan",
-      "package": "com.fouad.quranic"
+      "package": "com.fouad.quranic",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png",
