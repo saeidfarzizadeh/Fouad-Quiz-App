@@ -38,6 +38,7 @@ export const APP_LOGO = {
     bookReader: '📖',
     masterSafaei: '🧠',
     adminPanel: '⚙️',
+    qrGenerator: '🔗',
   },
   
   // تصاویر بخش‌ها - تم مذهبی و معنوی
@@ -51,6 +52,7 @@ export const APP_LOGO = {
     bookReader: 'https://via.placeholder.com/200x200/2E7D32/ffffff?text=کتابخوان+مقدس',
     masterSafaei: 'https://via.placeholder.com/200x200/6B8E23/ffffff?text=استاد+صفایی',
     adminPanel: 'https://via.placeholder.com/200x200/8B4513/ffffff?text=پنل+مربی',
+    qrGenerator: 'https://via.placeholder.com/200x200/0D47A1/ffffff?text=QR+Code',
   },
   
   // رنگ‌های بخش‌ها - تم مذهبی و معنوی
@@ -64,6 +66,7 @@ export const APP_LOGO = {
     bookReader: '#2E7D32', // سبز تیره مذهبی
     masterSafaei: '#6B8E23', // سبز زیتونی
     adminPanel: '#8B4513', // قهوه‌ای چوبی
+    qrGenerator: '#0D47A1', // آبی تیره تکنولوژیک
   }
 };
 

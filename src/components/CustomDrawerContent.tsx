@@ -18,7 +18,17 @@ import { APP_LOGO } from '../data/appConfig';
 const CustomDrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
   const { navigation } = props;
 
-  const menuItems = [
+  interface MenuItem {
+    title: string;
+    icon: string;
+    emoji: string;
+    image: string;
+    screen: string;
+    color: string;
+    params?: Record<string, any>;
+  }
+
+  const menuItems: MenuItem[] = [
     {
       title: 'خانه',
       icon: 'home',
@@ -103,6 +113,14 @@ const CustomDrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
       color: APP_LOGO.sectionColors.masterSafaei,
     },
     {
+      title: 'تولید QR Code',
+      icon: 'qr-code-2',
+      emoji: APP_LOGO.sectionIcons.qrGenerator,
+      image: APP_LOGO.sectionImages.qrGenerator,
+      screen: 'QRCodeGenerator',
+      color: APP_LOGO.sectionColors.qrGenerator,
+    },
+    {
       title: 'درباره برنامه',
       icon: 'info',
       emoji: 'ℹ️',
@@ -112,7 +130,7 @@ const CustomDrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
     },
   ];
 
-  const adminMenuItems = [
+  const adminMenuItems: MenuItem[] = [
     {
       title: 'پنل مربی',
       icon: 'admin-panel-settings',
@@ -284,29 +302,10 @@ const styles = StyleSheet.create({
   menuItem: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'space-between',
     paddingVertical: 15,
-    paddingHorizontal: 10,
-    marginBottom: 5,
-    borderRadius: 10,
-    backgroundColor: '#fff',
-    elevation: 1,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-  },
-  iconContainer: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: 15,
-  },
-  menuItem: {
-    paddingVertical: 15,
-    paddingHorizontal: 10,
-    marginBottom: 8,
+    paddingHorizontal: 14,
+    marginBottom: 12,
     borderRadius: 15,
     backgroundColor: '#FFF8DC',
     elevation: 2,
@@ -335,6 +334,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
+    marginRight: 15,
     elevation: 2,
     shadowColor: '#8B4513',
     shadowOffset: { width: 0, height: 1 },

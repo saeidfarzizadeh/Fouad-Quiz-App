@@ -26,7 +26,7 @@ const CoursesScreen: React.FC<CoursesScreenProps> = ({ navigation, route }) => {
 
   // تعریف ترتیب صفحات برای ناوبری
   const pageOrder = ['Home', 'Quran', 'Courses', 'Quiz', 'Certificate', 'SoulCalculation', 'Motahari', 'MasterSafaei'];
-  const currentPageIndex = 2; // CoursesScreen در ایندکس 2 است
+  const currentPageIndex: number = 2; // CoursesScreen در ایندکس 2 است
 
   // ناوبری به صفحه بعدی
   const goToNextPage = () => {
