@@ -16,6 +16,7 @@ import MotahariScreen from './src/screens/MotahariScreen';
 import BookReaderScreen from './src/screens/BookReaderScreen';
 import MasterSafaeiScreen from './src/screens/MasterSafaeiScreen';
 import AdminPanelScreen from './src/screens/AdminPanelScreen';
+import QRCodeGeneratorScreen from './src/screens/QRCodeGeneratorScreen';
 
 // Components
 import CustomDrawerContent from './src/components/CustomDrawerContent';
@@ -106,6 +107,13 @@ export default function App() {
                       component={MasterSafaeiScreen}
                       options={{
                         title: 'استاد صفایی حائری',
+                      }}
+                    />
+                    <Drawer.Screen
+                      name="QRCodeGenerator"
+                      component={QRCodeGeneratorScreen}
+                      options={{
+                        title: 'تولید QR Code',
                       }}
                     />
                     <Drawer.Screen

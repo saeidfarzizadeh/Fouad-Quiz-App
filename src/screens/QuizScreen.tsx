@@ -30,7 +30,7 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
 
   // تعریف ترتیب صفحات برای ناوبری
   const pageOrder = ['Home', 'Quran', 'Courses', 'Quiz', 'Certificate', 'SoulCalculation', 'Motahari', 'MasterSafaei'];
-  const currentPageIndex = 3; // QuizScreen در ایندکس 3 است
+  const currentPageIndex: number = 3; // QuizScreen در ایندکس 3 است
 
   // ناوبری به صفحه بعدی
   const goToNextPage = () => {

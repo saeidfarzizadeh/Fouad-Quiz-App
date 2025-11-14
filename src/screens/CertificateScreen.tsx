@@ -30,7 +30,7 @@ const CertificateScreen: React.FC<CertificateScreenProps> = ({ navigation, route
 
   // تعریف ترتیب صفحات برای ناوبری
   const pageOrder = ['Home', 'Courses', 'Quiz', 'Certificate'];
-  const currentPageIndex = 3; // CertificateScreen در ایندکس 3 است
+  const currentPageIndex: number = 3; // CertificateScreen در ایندکس 3 است
 
   // ناوبری به صفحه بعدی
   const goToNextPage = () => {

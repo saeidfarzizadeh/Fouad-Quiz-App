@@ -80,6 +80,13 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
       color: '#9b59b6',
       onPress: () => navigation.navigate('Certificate'),
     },
+    {
+      title: 'تولید QR',
+      subtitle: 'ساخت کد تأیید',
+      icon: 'qr-code-2',
+      color: '#1abc9c',
+      onPress: () => navigation.navigate('QRCodeGenerator'),
+    },
   ];
 
   const features = [
